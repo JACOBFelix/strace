@@ -1,0 +1,31 @@
+.\" Manpage for strace
+.\" Contact jacob_f@epitech.eu .in to correct errors or types.
+
+.TH man 1  " 2015" "1.1" "strace man page"
+
+.SH NAME
+strace \- A basic recode of the Linux Debug Tool.
+.SH SYNOPSIS
+\fB./strace \fR [\fI-p\fR] [\fIPID\fR]
+\fB./strace \fR [\fIProgram to trace\fR][\fIArgument]
+
+.SH DESCRIPTION
+\fBstrace \fR is a programm that trace the syscall of a process and display there returns and arguments.
+\fBstrace use the system call ptrace with flag PTRACE_SINGLESTEP, PTRACE_INTERRUPT,
+	PTRACE_ATTACH, PTRACE_DETACH, PTRACE_PEEKTEXT, PTRACE_GETSIGINFO, PTRACE_GETREGS
+
+\f
+.TP
+.SH OPTIONS
+.TP
+\fB\-p PID\fR \fB\fR
+Trace a process already executed and detach him on a SIGINT.
+.TP
+.SH SEE ALSO
+No related manpage.
+.SH REPORTING BUGS
+No known bugs.
+.br
+Report bugs to felix.jacob@epitech.eu
+.SH AUTHOR
+jacob_f
